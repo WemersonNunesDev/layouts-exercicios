@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho {
+    background-color: #3EA66B;
+}
+
+#cab-menu .menu-lista{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 1.5rem;
+}
+
+.menu-lista a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    background-color: #FFFBE0;
+    border: 2px solid #000;
+    border-radius: 2px;
+}
+
+#conteudo {
+    padding: 1rem;
+    margin: auto;
+    background-color: #FFFBE0;
+}
+
+#conteudo > h1 {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.sec_books {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.book {
+    width: 30%;
+}
+
+.book {
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.book p {
+    text-align: justify;
+}
