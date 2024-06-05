@@ -50,11 +50,9 @@ body {
 }
 
 .book {
-    padding: 6px;
-    border: 1px solid #000;
-    border-radius: 2px;
-}
-
-.book p {
     text-align: justify;
+    padding: 6px;
+    border-radius: 2px;
+    border: 2px solid #000;
+    background-color: #9C8BEF;
 }
