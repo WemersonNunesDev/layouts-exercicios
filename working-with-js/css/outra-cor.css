@@ -1,0 +1,19 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    padding: 1rem;
+    border-radius: 3px;
+    border: none;
+    background-color: green;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.outraCor {
+    background-color: red;
+}

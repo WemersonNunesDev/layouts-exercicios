@@ -1,0 +1,12 @@
+.resultado {
+    padding: 1rem;
+    margin: 2rem 3rem;
+    text-align: justify;
+    background-color: #62c0b38e;
+    border-radius: 3px;
+}
+
+.resultado h2,
+p {
+    padding: 0.5rem 0;
+}

@@ -1,0 +1,29 @@
+.resultado,
+.text-informativo {
+    background-color: rgba(131, 182, 241, 0.281);
+    padding: 1.5rem 1rem;
+    border-radius: 3px;
+    color: #738ec0;
+}
+
+.resultado ul {
+    columns: 3;
+    text-align: center;
+}
+
+.resultado ul>li {
+    list-style-type: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.resultado ul>li:hover {
+    border-bottom: 1px solid rgb(98, 146, 202);
+    color: #0f0f0f;
+    transition: 0.7s;
+}
+
+.text-informativo {
+    margin: 1.5rem 0;
+    text-align: center;
+}
