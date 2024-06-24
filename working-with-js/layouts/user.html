@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkingWithJS</title>
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Working With JS</h1>
+    </header>
+
+    <main class="conteudo">
+        <section class="text-info">
+            <label for="nome">Nome</label>
+            <input class="item-form" type="text" id="nome">
+
+            <label for="idade">Idade</label>
+            <input class="item-form" type="number" id="idade">
+
+            <label for="altura">Altura</label>
+            <input class="item-form" type="number" id="altura">
+
+            <label for="peso">Peso</label>
+            <input class="item-form" type="number" id="peso">
+
+            <input type="button" class="item-form btn-form" onclick="calcular()" value="CALCULAR">
+            <hr>
+        </section>
+        <div class="resultado"></div>
+    </main>
+
+    <script src="../scripts/user.js"></script>
+</body>
+</html>
