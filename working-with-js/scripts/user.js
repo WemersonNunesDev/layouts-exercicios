@@ -1,18 +1,54 @@
+let nome = document.querySelector('input#nome');
+let idade = document.querySelector('input#idade');
+let altura = document.querySelector('input#altura');
+let peso = document.querySelector('input#peso');
+
+const res = document.querySelector('div.resultado');
+
 function calcular() {
-    const res = document.querySelector('div.resultado');
-    const nome = document.querySelector('input#nome');
-    const idadeUser = document.querySelector('input#idade');
-    const alturaUser = document.querySelector('input#altura');
-    const pesoUser = document.querySelector('input#peso');
+    let nomeS = String(nome.value);
+    let idadeN = Number(idade.value);
+    let alturaN = Number(altura.value);
+    let pesoN = Number(peso.value);
+    const imcCalculo = pesoN / (alturaN * alturaN);
+    const imc = imcCalculo.toFixed(2);
+    const imcIdeal = 25;
+    const diferncaDePeso = (pesoN * imcIdeal) / imc;
+    const pesoIdeal = diferncaDePeso.toFixed(0)
+    //precisa perder xKgs
+    // sobrePeso x imcIdeal / imcAtual
 
-    const idade = Number(idadeUser.value);
-    const altura = Number(alturaUser.value);
-    const peso = Number(pesoUser.value);
-    const imc = peso / (altura * altura);
+    res.innerHTML =
+        `
+    <p>Nome: ${nomeS}, de ${idadeN} anos.</p>
+    `
 
-
-    res.innerHTML = `
-    <p>${nome}</p>
-    <p>${idade} anos.</p>
-    <p>Seu IMC é ${imc.toFixed(2)}</p>`
+    if (imc >= 18.5 && imc <= 25) {
+        res.innerHTML +=
+            `
+        <p>Seu IMC é ${imc}. Seu status é: <strong>NORMAL</strong></p>
+        `
+    } else if (imc >= 16 && imc < 18.5) {
+        res.innerHTML +=
+            `
+        <p>Seu IMC é ${imc}. Seu status é: <strong>SUBPESO</strong></p>
+        `
+    } else if (imc < 16) {
+        res.innerHTML +=
+            `
+        <p>Seu IMC é ${imc}. Seu status é: <strong>SUBPESO SEVERO!</strong></p>
+        `
+    } else if (imc > 25 && imc < 40) {
+        res.innerHTML +=
+            `
+        <p>Seu IMC é ${imc}. Seu status é: <strong>SOBREPESO</strong>!</p>
+        <p>Seu peso ideal é de <strong>${pesoIdeal}kgs</strong></p>
+        `
+    } else if (imc > 40) {
+        res.innerHTML +=
+            `
+        <p>Seu IMC é ${imc}. Seu status é: <strong>SOBREPESO SEVERO</strong>!</p>
+        <p>Seu peso ideal é de <strong>${pesoIdeal}kgs</strong></p>
+        `
+    }
 }
