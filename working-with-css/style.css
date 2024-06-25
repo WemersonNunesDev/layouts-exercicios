@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#conteudo {
+    width: 38%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 1.5rem;
+    font-size: 4rem;
+    text-shadow: red -3px 0, cyan 3px 0;
+}
