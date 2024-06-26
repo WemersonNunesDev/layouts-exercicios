@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    padding: 4rem;
+    text-align: center;
+}
+
+#cabecalho h1 {
+    padding: 1.5rem;
+}
+
+#conteudo {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.pai {
+    /* 1rem -> 16px */
+    padding: 2rem;
+    margin: 80px 0;
+    background-color: brown;
+}
+.pai h2, p {
+    text-align: right;
+}
+
+.pai-filho {
+    padding: 1.5rem;
+    background-color: aquamarine;
+}
+
+.filho {
+    padding: 0.5rem;
+    background-color: burlywood;
+}
