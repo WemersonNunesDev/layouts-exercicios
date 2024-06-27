@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-class: #e5e5e5;
+    --cor-stone: #f7f2ef;
+    --cor-off-white: #fefaf1;
+}
+
+body {
+    color: var(--cor-class);
+    background-color: #000;
+}
+
+body::before {
+    content: "";
+    background-image: url('../image/nigth-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#cabecalho {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.75rem; 
+}
+
+#conteudo {
+    width: 64%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    border-top: 1px solid var(--cor-class);
+}
+
+.informacoes {
+    font-size: 1.25rem;
+    text-align: left;
+    padding: 0 6rem;
+    margin: 5rem 0;
+}
+
+.escolha {
+    text-align: center;
+    padding: 2.25rem;
+    margin: 4rem 0;
+    backdrop-filter: blur(24px);
+    box-shadow: 0 0 20px rgba(227, 228, 237, 0.32);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: space-around;
+}
+
+.escolha > .escolher-opcao {
+    color: var(--cor-class);
+    border: 2px solid var(--cor-class);
+    padding: 0.75rem;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.escolha > .escolher-opcao:hover {
+    cursor: pointer;
+    color: #061633;
+    background-color: var(--cor-class);
+    transition: 0.8s;
+}

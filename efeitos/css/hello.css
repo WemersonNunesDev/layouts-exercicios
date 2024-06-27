@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Amaranth';
+    src: url('../fonts/Amaranth-Regular.ttf') format('truetype');
+}
+
+body {
+    color: #e5e5e5;
+    background-color: #000;
+    font-family: 'Amaranth';
+    font-weight: normal;
+}
+
+body::before {
+    content: "";
+    background-image: url('../image/nigth-desert.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#conteudo {
+    width: 64%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.text-element {
+    position: fixed;
+}
+
+.text {
+    margin: 12rem 0;
+    padding: 2rem;
+    backdrop-filter: blur(24px);
+    box-shadow: 0 0 18px rgba(227, 228, 237, 0.16);
+    border: 2px solid rgba(255, 255, 255, 0.48);
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+}
+
+.text h1 {
+    margin: 8rem;
+    padding: 2rem;
+}
+
+.text .icon-img {
+    width: 16px;
+}
