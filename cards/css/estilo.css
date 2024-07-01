@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#conteudo {
+    margin: auto;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    margin-block: 4rem;
+}
+
+.img-card {
+    background-image: url('../src/image/nigth-wallpaper.jpg');
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 48%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.descricao {
+    padding: 1rem;
+    margin-block: 1rem;
+    box-shadow: 8px 6px 16px #0000328a;
+}
+
+.descricao h1,
+h2,
+p {
+    padding-block: 0.5rem;
+    font-weight: normal;
+}
+
+.descricao > h1 {
+    font-size: 1.5rem;
+}
+
+.descricao > h2 {
+    font-size: 1.25rem;
+}
