@@ -1,0 +1,46 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #00050D;
+    color: #ffffff;
+}
+
+#conteudo {
+    margin: auto;
+    text-align: center;
+}
+
+.text {
+    padding: 11rem 0 4.5rem 0;
+}
+
+.text > h1, h2 {
+    padding-block: 0.25rem;
+}
+
+.text > h1 {
+    font-weight: normal;
+    font-size: 4.5rem;
+}
+
+.text > h2 {
+    font-weight: normal;
+    font-size: 3.5rem;
+    color: #0C5DC7;
+}
+
+.a_btns>.btn {
+    padding: 0.5rem 1rem;
+    margin-inline: 1rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    color: #0C5DC7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.a_btns>.btn:hover {
+    border: 1px solid #3DF2F2;
+    color: #3DF2F2;
+    transition: 0.2s;
+}
