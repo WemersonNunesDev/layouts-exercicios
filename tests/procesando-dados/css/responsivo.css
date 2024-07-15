@@ -1,0 +1,17 @@
+@media(max-width: 1970px) {
+    #conteudo {
+        width: 80dvh;
+    }
+}
+
+@media(max-width: 1080px) {
+    #conteudo {
+        width: 72dvh;
+    }
+}
+
+@media(max-width: 990px) {
+    #conteudo {
+        width: 64dvh;
+    }
+}
