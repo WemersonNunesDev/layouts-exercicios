@@ -8,7 +8,7 @@ a {
 }
 
 #cabecalho {
-    background-color: rgb(109, 36, 177);
+    background-color: rgb(50, 159, 179);
     height: 5rem;
 }
 
@@ -25,13 +25,75 @@ a {
 #conteudo {
     margin: auto;
     text-align: center;
-    display: flex;
-    justify-content: center;
     margin-block: 2rem;
-    background-color: bisque;
 }
 
 .add-produto {
-    background-color: aquamarine;
+    width: 100%;
     margin: 1rem 0;
+    text-align: left;
+}
+
+.add-produto>label,
+input,
+button {
+    display: block;
+    width: 98%;
+    margin-bottom: 0.25rem;
+}
+
+.add-produto> .btn-enviar {
+    width: 6rem;
+    padding: 0.25rem;
+    margin-top: 1rem;
+    background-color: #48b37d;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.add-produto> .btn-enviar:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 8px 8px -2px #00000065;
+}
+
+.add-produto>label {
+    font-size: 1.25rem;
+}
+
+.add-produto>input {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
+
+.add-produto>input:focus {
+    background-color: #f5da3f75;
+}
+
+.tabela-estoque {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 3rem;
+    border: 1px solid #000;
+}
+
+/* Pag Sobre */
+
+.text-informacoes {
+    text-align: justify;
+}
+
+.text-informacoes>h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.text-informacoes>p {
+    margin-block: 0.5rem;
+    font-size: 1.10rem;
+}
+
+.text-informacoes>img {
+    width: 100%;
+    margin: 1.75rem 0;
 }
