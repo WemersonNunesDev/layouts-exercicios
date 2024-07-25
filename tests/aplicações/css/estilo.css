@@ -42,7 +42,7 @@ button {
     margin-bottom: 0.25rem;
 }
 
-.add-produto> .btn-enviar {
+.add-produto>.btn-enviar {
     width: 6rem;
     padding: 0.25rem;
     margin-top: 1rem;
@@ -52,7 +52,7 @@ button {
     font-size: 1rem;
 }
 
-.add-produto> .btn-enviar:hover {
+.add-produto>.btn-enviar:hover {
     transform: scale(1.2);
     box-shadow: 0px 8px 8px -2px #00000065;
 }
@@ -75,6 +75,15 @@ button {
     padding: 1rem;
     margin-top: 3rem;
     border: 1px solid #000;
+    text-align: justify;
+}
+
+.tabela-estoque th{
+    padding-bottom: 1rem;
+}
+
+.tabela-estoque td{
+    font-size: 1.25rem;
 }
 
 /* Pag Sobre */
